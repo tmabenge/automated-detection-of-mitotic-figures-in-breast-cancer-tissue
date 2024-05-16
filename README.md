@@ -22,3 +22,26 @@ The model is trained using PyTorch/XLA on a TPU VM v3-8. The training code is op
 
 The `visualize_predictions` function allows you to visualize the model's predictions by drawing bounding boxes on the image patches.
 
+
+## Requirements
+
+- Python 3.8 or higher
+- PyTorch
+- torchvision
+- pydicom
+- OpenCV (cv2)
+- NumPy
+- Pandas
+- Matplotlib
+- tqdm
+- cloud-tpu-client
+- torch_xla (for TPU training)
+
+## Usage
+
+1. **Set up a TPU VM v3-8 on Google Cloud Platform.**
+2. **Upload the dataset (DICOM WSIs and SQLite database) to your TPU VM.**
+3. **Install the required libraries:**
+   ```bash
+   pip install -r requirements.txt 
+

@@ -18,10 +18,6 @@ The project uses a Faster R-CNN model with a ResNet-50 backbone pre-trained on I
 
 The model is trained using PyTorch/XLA on a TPU VM v3-8. The training code is optimized for memory efficiency by processing tiles (frames) from the DICOM WSIs individually and using a `DataLoader` with multiple worker processes and pinned memory.
 
-## Evaluation
-
-The model is evaluated on a held-out test set using standard object detection metrics such as mean Average Precision (mAP), precision, and recall.
-
 ## Visualization
 
 The `visualize_predictions` function allows you to visualize the model's predictions by drawing bounding boxes on the image patches.

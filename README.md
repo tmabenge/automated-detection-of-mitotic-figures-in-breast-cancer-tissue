@@ -22,4 +22,3 @@ The model is trained using PyTorch/XLA on a TPU VM v3-8. The training code is op
 
 The `visualize_predictions` function allows you to visualize the model's predictions by drawing bounding boxes on the image patches.
 
-## Repository Structure
